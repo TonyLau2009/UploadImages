@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jocelyn_test04.com.uploadimages.MainActivity">
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/iVcamera" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:id="@+id/iVgallery"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iVcamera"
+        android:layout_toEndOf="@+id/iVcamera"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:text="Remove"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:id="@+id/btnMove"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_above="@+id/scrollView2"
+        android:layout_toLeftOf="@+id/iVupload"
+        android:layout_toStartOf="@+id/iVupload" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:srcCompat="@android:drawable/ic_menu_upload"
+        android:id="@+id/iVupload"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/iVcamera"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearMain" />
+    </ScrollView>
+
+</RelativeLayout>
